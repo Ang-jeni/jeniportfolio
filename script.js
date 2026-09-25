@@ -1,0 +1,1 @@
+const menu=document.getElementById('menu'),nav=document.querySelector('nav');if(menu)menu.onclick=()=>nav.classList.toggle('open');const current=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('nav a').forEach(a=>{if(a.getAttribute('href')===current)a.style.color='#63ffe7'});
